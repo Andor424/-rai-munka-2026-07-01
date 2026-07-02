@@ -39,9 +39,9 @@ nav:hover{
     opacity: 1;
 }*/
 main{
-            display: grid;
+         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
+        grid-template-areas:
     'h n n'
     'as f ar';
     gap: 10px;
@@ -90,18 +90,23 @@ ol{
     display: flex;
     gap: 10px;
 }
-@media only screen and (max-width: 400px) {
-    body{
+@media only screen and (max-width: 600px) {
+    main{
+        width: 100%;
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
         'h'
         'n'
         'as'
         'f'
         'ar';
+        /*Vagy  display: block;*/
+       
     }
     #kek{
-        height: 300px;
+        height: 30px;
+        padding: 5px;
     }
     #kek a{
         display: block;
